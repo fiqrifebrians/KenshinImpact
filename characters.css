@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: Bahnschrift;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: linear-gradient(blue, red);
+}
+.logo{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-left: 50px;
+    width: 160px;
+    height: 100px;
+}
+ul{
+    float: right;
+    margin-top: 12px;
+    margin-right: 50px;
+}
+ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+ul li a{
+    color:white;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+a.active,a:hover{
+    background:rgba(0, 0, 255, 0.255);
+    transition: 0.22s;
+}
+.dropdown-menu{
+    position: relative;
+    z-index: 1;
+    line-height: 20px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    background-color: rgba(0, 0, 255, 0.255);
+    padding: 2%;
+}
+.dropdown-content li{
+    line-height: 40px;
+    padding: 10px;
+}
+.dropdown-menu:hover .dropdown-content{
+    display: block;
+}
+nav{
+    background: linear-gradient(red,blue);
+    height: 1420px;
+    width: 1920px;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.char{
+    float:left;
+    width: 30%;
+    margin: 5px;
+    border: 2px solid coral;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+}
+.char:hover{
+    border: 2px solid white;
+}
+.char img{
+    width: 480px;
+    height: 360px;
+}
+.char-name{
+    padding: 5px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(red,coral);
+
+}
+footer{
+    background-color: rgb(31, 31, 31);
+    height: 160px;
+}
+.osm{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+.socials{
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 1800px;
+    vertical-align: middle;
+}

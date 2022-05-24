@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <a href="home.html" target="_self"><img class="logo" src="./asset/logo.png" alt="logo"></a>
+        <ul>
+            <li><a href="./home.html" target="_self">Home</a></li>
+            <li><a href="characters.html" target="_self">Characters</a></li>
+            <li class="dropdown-menu">
+                <a href="about-game.html" target="_self">About Game</a>
+                <ul class="dropdown-content">
+                    <li><a href="about-game.html">Story</a></li>
+                    <li><a href="about-game-features.html"> Game Features</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html" target="_self">Gallery</a></li>
+            <li><a class="active" href="register.html" target="_self">Register</a></li>
+        </ul>
+    </header>
+    <nav>
+        <div class="formbox">
+            <div class="buttonbox">
+                <div id="btn"></div>
+                    <button type="button" class="toggle-btn" style="color: white;" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" style="color: white;" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder=" Enter Username" required>
+                <input type="password" class="input-field" placeholder=" Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Always Log Me In</span>
+                <button type="submit" class="submit-btn" style="color: white;">Log In</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder=" Enter a Username" required>
+                <input type="email" class="input-field" placeholder=" Enter a Email Address" required>
+                <input type="password" class="input-field" placeholder=" Enter a Password" required>
+                <input type="password" class="input-field" placeholder=" Confirm Password" required>
+                <input type="checkbox" class="check-box"><span>I agreed to Term and Condition</span>
+                <button type="submit" class="submit-btn" style="color: white;">Register</button>
+            </form>
+        </div>
+        <script>
+            var x=document.getElementById("login");
+            var y=document.getElementById("register");
+            var z=document.getElementById("btn");
+
+            function register (){
+                x.style.left = "-400px"
+                y.style.left = "50px"
+                z.style.left = "110px"
+            } function login (){
+                x.style.left = "50px"
+                y.style.left = "450px"
+                z.style.left = "0"
+            }
+        </script>
+   </nav>
+    <footer>
+        <ul class="socials">
+            <h1 class="osm">Our Social Media</h1>
+            <a href="https://www.instagram.com/genshinimpact/" target="_blank"><img src="./asset/112df6adb5d802cc693e99137a0f4381.png" alt="Our Instagram" height="38px" width="38px"></a>
+            <a href="https://twitter.com/GenshinImpact" target="_blank"><img src="./asset/Twitter-Logo-New-.png" alt="Our Twitter" height="38px" width="38px"></a>
+            <a href="https://www.youtube.com/channel/UCiS882YPwZt1NfaM0gR0D9Q" target="_blank"><img src="./asset/youtube-logo-5-2.png" alt="Our YouTube Channel" height="33px" width="49px"></a>
+        </ul>
+    </footer>
+</body>
+</html>
